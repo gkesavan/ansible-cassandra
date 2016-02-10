@@ -1,0 +1,9 @@
+---
+- hosts: cassandra
+  vars:
+    - cassandra_install_method: "package"
+    - cassandra_initial_token: '0'
+    - cassandra_cluster_name: "Robin"
+  roles:
+    - oracle-jdk
+    - cassandra
